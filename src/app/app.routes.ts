@@ -46,6 +46,13 @@ export const routes: Routes = [
         ]
     },
     {
+        path : 'admin', 
+        loadComponent : () => import('./layouts/admin-layout/admin-layout.component').then(res => res.AdminLayoutComponent),
+        children: [
+            
+        ]
+    },
+    {
         path: 'unauthorized',
         loadComponent: () => import('./pages/error/unauthorized/unauthorized.component').then(res => res.UnauthorizedComponent)
     },
