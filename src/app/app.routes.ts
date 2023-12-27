@@ -3,7 +3,7 @@ import { Routes } from '@angular/router';
 export const routes: Routes = [
     {
         path: '',
-        loadComponent: () => import('./layouts/global/global.component').then(res => res.GlobalComponent),
+        loadComponent: () => import('./layouts/global-layout/global.component').then(res => res.GlobalComponent),
         children: [
             {
                 path: '',
@@ -13,7 +13,7 @@ export const routes: Routes = [
     },
     {
         path: 'login',
-        loadComponent: () => import('./layouts/auth/auth.component').then(res => res.AuthComponent),
+        loadComponent: () => import('./layouts/auth-layout/auth.component').then(res => res.AuthComponent),
         children: [
             {
                 path: '',
@@ -33,7 +33,7 @@ export const routes: Routes = [
     // },
     {
         path: 'forgot-password',
-        loadComponent: () => import('./layouts/auth/auth.component').then(res => res.AuthComponent),
+        loadComponent: () => import('./layouts/auth-layout/auth.component').then(res => res.AuthComponent),
         children: [
             {
                 path: '',

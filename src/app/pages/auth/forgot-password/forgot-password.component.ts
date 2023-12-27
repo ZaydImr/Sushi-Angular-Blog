@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
-import { AuthService } from '../../../services/auth.service';
-import { HelperService } from '../../../services/helper.service';
 import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
+import { AuthService } from '@services/auth.service';
+import { HelperService } from '@services/helper.service';
 
 @Component({
   selector: 'app-forgot-password',

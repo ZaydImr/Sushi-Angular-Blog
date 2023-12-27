@@ -1,6 +1,11 @@
 {
   "name": "sushi-fe",
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "author": {
+    "name": "Zayd EL IMRANI",
+    "email": "elimrani.z@gmail.com",
+    "url": "https://zaydimr.me/"
+  },
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -9,7 +14,6 @@
     "test": "ng test",
     "serve:ssr:sushi-fe": "node dist/sushi-fe/server/server.mjs"
   },
-  "private": true,
   "dependencies": {
     "@angular/animations": "^17.0.0",
     "@angular/common": "^17.0.0",
